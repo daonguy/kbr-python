@@ -18,8 +18,7 @@ Contains the session secret key. You should generate a new key (can be anything)
 #### `[conversation]`
 Conversation settings. There are the discovery related options. 
 
-`call_discovery_if_low_confidence` - unused - ignore this setting - the APP will connect to discovery when the response JSON from Conversation contain this element {output: {action: call_discovery: ""}}, this app is modified to use conversation and discovery sample data from car demo
-https://github.com/watson-developer-cloud/conversation-with-discovery
+`call_discovery_if_low_confidence` - unused - ignore this setting - the APP will connect to discovery when the response JSON from Conversation contain this element {output: {action: call_discovery: ""}}, Please make sure the fields return from your discovery service including fields that you provided in config.ini ([discovery_feature]/return)
 
 `call_discovery_if_irrelevant` if `True` will call to Discovery if the offtopic (Irrelevant) option was hit. 
 
